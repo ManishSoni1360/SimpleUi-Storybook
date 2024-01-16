@@ -26,19 +26,14 @@ export const LoginForm = () => {
 
         <Text
           as="label"
-          htmlFor="username"
+          htmlFor="email"
           size={"sm"}
           weight={"medium"}
           className="mb-1.5"
         >
-          Username
+          Email
         </Text>
-        <Input
-          type="text"
-          id="username"
-          placeholder="Username"
-          className="mb-4"
-        />
+        <Input type="text" id="email" placeholder="Email" className="mb-4" />
 
         <Text
           as="label"

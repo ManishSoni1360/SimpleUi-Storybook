@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/simple-ui-umd.cjs",
+  "module": "dist/simple-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/simple-ui.js",
+      "require": "./dist/simple-ui-umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -17,6 +28,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.0",
+    "vite-plugin-dts": "^3.7.1",
     "vite-tsconfig-paths": "^4.2.3"
   },
   "devDependencies": {
